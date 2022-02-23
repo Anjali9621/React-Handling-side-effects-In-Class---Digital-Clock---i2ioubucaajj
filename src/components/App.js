@@ -1,5 +1,3 @@
-import React from 'react'
-import '../styles/App.css';
 import React, { useEffect, useState } from "react";
 import "../styles/App.css";
 
@@ -12,7 +10,7 @@ const App = () => {
     let tim = setInterval(() => {
       let clock = new Date().toLocaleString();
       setDate(clock);
-    }, 2000);
+    }, 1000);
 
     return () => {
       clearInterval(tim);
@@ -20,12 +18,8 @@ const App = () => {
   }, []);
   return (
     <div id="main">
-      <div className="date-time"></div>
       <div className="date-time">{date}</div>
     </div>
-  )
-}
-
   );
 };
 
