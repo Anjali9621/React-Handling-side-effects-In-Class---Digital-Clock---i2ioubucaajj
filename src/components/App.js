@@ -12,7 +12,7 @@ const App = () => {
     let tim = setInterval(() => {
       let clock = new Date().toLocaleString();
       setDate(clock);
-    }, 1000);
+    }, 2000);
 
     return () => {
       clearInterval(tim);
